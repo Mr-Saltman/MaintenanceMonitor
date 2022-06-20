@@ -18,4 +18,13 @@ public class MaintenanceMonitorTest {
         // Assert
         Assertions.assertEquals(expectedResult, result);
     }
+
+    @Test
+    void resetTest(){
+        String expectedResult = "";
+
+        String result = maintenanceMonitor.reset();
+
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
