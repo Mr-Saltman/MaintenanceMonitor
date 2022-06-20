@@ -27,4 +27,13 @@ public class MaintenanceMonitorTest {
 
         Assertions.assertEquals(expectedResult, result);
     }
+
+    @Test
+    void setMessageTest(){
+        String expectedResult = "success";
+
+        String result = maintenanceMonitor.setMessage("success");
+
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
