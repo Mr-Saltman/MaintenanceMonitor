@@ -8,12 +8,14 @@ public class MaintenanceMonitor {
         return this.message;
     }
 
-    public void reset(){
+    public String reset(){
         this.message = "";
+        return this.message;
     }
 
-    public void setMessage(String msg){
+    public String setMessage(String msg){
         this.message = msg;
+        return this.message;
     }
 
 }
