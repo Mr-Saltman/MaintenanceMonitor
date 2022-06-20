@@ -12,4 +12,8 @@ public class MaintenanceMonitor {
         this.message = "";
     }
 
+    public void setMessage(String msg){
+        this.message = msg;
+    }
+
 }
