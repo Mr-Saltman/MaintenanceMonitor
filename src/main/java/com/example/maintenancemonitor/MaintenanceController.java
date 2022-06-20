@@ -15,4 +15,9 @@ public class MaintenanceController {
         return maintenanceMonitor.getMessage();
     }
 
+    @RequestMapping("/reset")
+    public void resetMessage(){
+        maintenanceMonitor.reset();
+    }
+
 }

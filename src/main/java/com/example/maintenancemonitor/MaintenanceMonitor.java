@@ -8,4 +8,8 @@ public class MaintenanceMonitor {
         return this.message;
     }
 
+    public void reset(){
+        this.message = "";
+    }
+
 }
