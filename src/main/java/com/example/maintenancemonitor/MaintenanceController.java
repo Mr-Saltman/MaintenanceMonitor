@@ -26,4 +26,14 @@ public class MaintenanceController {
         maintenanceMonitor.setMessage(msg);
     }
 
+    @RequestMapping("/changeStatus")
+    public void changeStatus(){
+        maintenanceMonitor.setStatus(!maintenanceMonitor.getStatus());
+    }
+
+    @RequestMapping("/status")
+    public boolean getStatus(){
+        return maintenanceMonitor.getStatus();
+    }
+
 }
