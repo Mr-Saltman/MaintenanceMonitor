@@ -36,4 +36,22 @@ public class MaintenanceMonitorTest {
 
         Assertions.assertEquals(expectedResult, result);
     }
+
+    @Test
+    void getStatusTest(){
+        boolean expectedResult = true;
+
+        boolean result = maintenanceMonitor.getStatus();
+
+        Assertions.assertEquals(expectedResult, result);
+    }
+
+    @Test
+    void setStatusTest(){
+        boolean expectedResult = false;
+
+        boolean result = maintenanceMonitor.setStatus(false);
+
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
