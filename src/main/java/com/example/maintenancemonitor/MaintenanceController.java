@@ -27,8 +27,8 @@ public class MaintenanceController {
     }
 
     @RequestMapping("/changeStatus")
-    public void changeStatus(){
-        maintenanceMonitor.setStatus(!maintenanceMonitor.getStatus());
+    public boolean changeStatus(){
+        return maintenanceMonitor.setStatus(!maintenanceMonitor.getStatus());
     }
 
     @RequestMapping("/status")

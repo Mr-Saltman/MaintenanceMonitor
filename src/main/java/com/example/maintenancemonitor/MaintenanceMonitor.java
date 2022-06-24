@@ -9,8 +9,9 @@ public class MaintenanceMonitor {
         return this.status;
     }
 
-    public void setStatus(boolean status) {
+    public boolean setStatus(boolean status) {
         this.status = status;
+        return this.status;
     }
 
     public String getMessage(){
